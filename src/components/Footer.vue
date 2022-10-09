@@ -5,13 +5,13 @@ const whiteLogo = "src/assets/img/logo/white_logo.svg";
 <template>
   <footer id="footer" class="mt-16 bg-black text-white text-lg font-medium">
     <div
-      class="relative max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 lg:pt-24"
+      class="relative max-w-screen-xl px-4 py-16 mx-auto sm:px-6 md:px-8 md:pt-24"
     >
       <div
-        class="absolute top-4 sm:top-6 lg:top-8 right-4 sm:right-6 lg:right-8"
+        class="absolute top-4 sm:top-6 md:top-8 right-4 sm:right-6 md:right-8"
       >
         <a
-          class="inline-block p-2 transition border-2 border-white bg-transparent text-white rounded-full sm:p-3 lg:p-4 hover:bg-white hover:text-black"
+          class="inline-block p-2 transition border-2 border-white bg-transparent text-white rounded-full sm:p-3 md:p-4 hover:bg-white hover:text-black"
           href="#header"
         >
           <span class="sr-only">Retour en haut</span>
@@ -31,10 +31,10 @@ const whiteLogo = "src/assets/img/logo/white_logo.svg";
         </a>
       </div>
 
-      <div class="lg:flex lg:items-end lg:justify-between">
+      <div class="md:flex md:items-end md:justify-between">
         <div>
           <p
-            class="max-w-md mx-auto leading-relaxed text-center text-2xl lg:text-left"
+            class="max-w-md mx-auto leading-relaxed text-center text-2xl md:text-left"
           >
             Vous avez une idée, un projet, nous pouvons vous aider à les
             concrétiser de manière optimale.
@@ -46,13 +46,13 @@ const whiteLogo = "src/assets/img/logo/white_logo.svg";
             >
           </p>
 
-          <div class="flex mt-6 justify-center lg:justify-start">
+          <div class="flex mt-6 justify-center md:justify-start">
             <img v-lazy="whiteLogo" alt="" class="w-2/5 md:w-1/5 lg:w-2/5" />
           </div>
         </div>
 
-        <nav class="mt-12 lg:mt-0" aria-labelledby="footer-navigation">
-          <div class="text-center lg:text-left mb-6 space-y-4">
+        <nav class="mt-12 md:mt-0" aria-labelledby="footer-navigation">
+          <div class="text-center md:text-left mb-6 space-y-4">
             <div class="">
               <h4 class="text-2xl">Benin</h4>
               <div class="mt-4">
@@ -84,7 +84,7 @@ const whiteLogo = "src/assets/img/logo/white_logo.svg";
           <h2 class="sr-only" id="footer-navigation">Footer navigation</h2>
 
           <ul
-            class="flex flex-wrap justify-center gap-6 lg:justify-end md:gap-8 lg:gap-10"
+            class="flex flex-wrap justify-center gap-6 md:justify-end md:gap-8 lg:gap-10"
           >
             <li>
               <a
@@ -201,7 +201,7 @@ const whiteLogo = "src/assets/img/logo/white_logo.svg";
         </nav>
       </div>
 
-      <p class="mt-12 text-sm text-center lg:text-right">
+      <p class="mt-12 text-sm text-center md:text-right">
         Copyright &copy; 2022. All rights reserved.
       </p>
     </div>

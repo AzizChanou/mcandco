@@ -1,0 +1,170 @@
+{
+    "atelico": {
+        "logo": "assets/logo/atelico.png",
+        "name": "Atelico",
+        "description": "Nous avons accompagné la marque Revenge Body by L",
+        "link": "",
+        "picture": {
+            "1": "/projects/atelico/1.jpg",
+            "2": "/projects/atelico/2.jpg",
+            "3": "/projects/atelico/3.jpg",
+            "4": "/projects/atelico/4.jpg",
+            "5": "/projects/atelico/5.jpg",
+            "6": "/projects/atelico/6.jpg",
+            "7": "/projects/atelico/7.jpg",
+            "8": "/projects/atelico/8.jpg",
+            "9": "/projects/atelico/9.jpg"
+        }
+    },
+    "lalabeauties": {
+        "logo": "assets/logo/lala.png",
+        "name": "Lala-Beauties",
+        "description": "Nous avons accompagné la marque Revenge Body by L",
+        "link": "",
+        "picture": {
+            "1": "/projects/lalabeauties/1.jpg",
+            "2": "/projects/lalabeauties/2.jpg",
+            "3": "/projects/lalabeauties/3.jpg",
+            "4": "/projects/lalabeauties/4.jpg",
+            "5": "/projects/lalabeauties/5.jpg",
+            "6": "/projects/lalabeauties/6.jpg",
+            "7": "/projects/lalabeauties/7.jpg",
+            "8": "/projects/lalabeauties/8.jpg",
+            "9": "/projects/lalabeauties/9.jpg",
+            "10": "/projects/lalabeauties/10.jpg",
+            "11": "/projects/lalabeauties/11.jpg",
+            "12": "/projects/lalabeauties/12.jpg",
+            "13": "/projects/lalabeauties/13.jpg",
+            "14": "/projects/lalabeauties/14.jpg",
+            "15": "/projects/lalabeauties/15.jpg",
+            "16": "/projects/lalabeauties/16.jpg",
+            "17": "/projects/lalabeauties/17.jpg"
+        }
+    },
+    "clubdesminions": {
+        "logo": "assets/logo/minion.png",
+        "name": "Club-des-minions",
+        "description": "Nous avons accompagné la marque Revenge Body by L",
+        "link": "",
+        "picture": {
+            "1": "/projects/clubdesminions/1.jpg",
+            "2": "/projects/clubdesminions/2.jpg",
+            "3": "/projects/clubdesminions/3.jpg",
+            "4": "/projects/clubdesminions/4.jpg",
+            "5": "/projects/clubdesminions/5.jpg",
+            "6": "/projects/clubdesminions/6.jpg",
+            "7": "/projects/clubdesminions/7.jpg",
+            "8": "/projects/clubdesminions/8.jpg",
+            "9": "/projects/clubdesminions/9.jpg"
+        }
+    },
+    "rbl": {
+        "logo": "assets/logo/rbl.png",
+        "name": "Revenge-Body-by-L",
+        "description": "Nous avons accompagné la marque Revenge Body by L",
+        "link": "",
+        "picture": {
+            "1": "/projects/rbl/1.jpg",
+            "2": "/projects/rbl/2.jpg",
+            "3": "/projects/rbl/3.jpg",
+            "4": "/projects/rbl/4.jpg",
+            "5": "/projects/rbl/5.jpg",
+            "6": "/projects/rbl/6.jpg",
+            "7": "/projects/rbl/7.jpg",
+            "8": "/projects/rbl/8.jpg",
+            "9": "/projects/rbl/9.jpg"
+        }
+    },
+    "joli": {
+        "logo": "assets/logo/joli.png",
+        "name": "JoLi",
+        "description": "Nous avons accompagné la marque Revenge Body by L",
+        "link": "",
+        "picture": {
+            "1": "/projects/joli/1.jpg",
+            "2": "/projects/joli/2.jpg",
+            "3": "/projects/joli/3.jpg",
+            "4": "/projects/joli/4.jpg",
+            "5": "/projects/joli/5.jpg",
+            "6": "/projects/joli/6.jpg",
+            "7": "/projects/joli/7.jpg",
+            "8": "/projects/joli/8.jpg",
+            "9": "/projects/joli/9.jpg"
+        }
+    },
+    "lalamedispa": {
+        "logo": "assets/logo/lala.png",
+        "name": "Lala-Medi-Spa",
+        "description": "Nous avons accompagné la marque Revenge Body by L",
+        "link": "",
+        "picture": {
+            "1": "/projects/lalamedispa/1.jpg",
+            "2": "/projects/lalamedispa/2.jpg",
+            "3": "/projects/lalamedispa/3.jpg",
+            "4": "/projects/lalamedispa/4.jpg",
+            "5": "/projects/lalamedispa/5.jpg",
+            "6": "/projects/lalamedispa/6.jpg",
+            "7": "/projects/lalamedispa/7.jpg",
+            "8": "/projects/lalamedispa/8.jpg",
+            "9": "/projects/lalamedispa/9.jpg"
+        }
+    },
+    "cedetro": {
+        "logo": "assets/logo/cedetro.png",
+        "name": "Ced&Ro",
+        "description": "Nous avons accompagné la marque Revenge Body by L",
+        "link": "",
+        "picture": {
+            "1": "/projects/cedetro/1.jpg",
+            "2": "/projects/cedetro/2.jpg",
+            "3": "/projects/cedetro/3.jpg",
+            "4": "/projects/cedetro/4.jpg",
+            "5": "/projects/cedetro/5.jpg",
+            "6": "/projects/cedetro/6.jpg",
+            "7": "/projects/cedetro/7.jpg",
+            "8": "/projects/cedetro/8.jpg",
+            "9": "/projects/cedetro/9.jpg"
+        }
+    },
+    "yogawithmae": {
+        "logo": "assets/logo/yogawithmae.png",
+        "name": "Yoga-With-Mae",
+        "description": "Nous avons accompagné la marque Revenge Body by L",
+        "link": "",
+        "picture": {
+            "1": "/projects/yogawithmae/1.jpg",
+            "2": "/projects/yogawithmae/2.jpg",
+            "3": "/projects/yogawithmae/3.jpg",
+            "4": "/projects/yogawithmae/4.jpg",
+            "5": "/projects/yogawithmae/5.jpg",
+            "6": "/projects/yogawithmae/6.jpg"
+        }
+    },
+    "funke": {
+        "logo": "assets/logo/funke.png",
+        "name": "Funkè",
+        "description": "Nous avons accompagné la marque Revenge Body by L",
+        "link": "",
+        "picture": {
+            "1": "/projects/funke/1.jpg",
+            "2": "/projects/funke/2.jpg"
+        }
+    },
+    "oasisbenin": {
+        "logo": "assets/logo/oasisbenin.png",
+        "name": "Oasis-Bénin",
+        "description": "Nous avons accompagné la marque Revenge Body by L",
+        "link": "",
+        "picture": {
+            "1": "/projects/oasisbenin/1.jpg",
+            "2": "/projects/oasisbenin/2.jpg",
+            "3": "/projects/oasisbenin/3.jpg",
+            "4": "/projects/oasisbenin/4.jpg",
+            "5": "/projects/oasisbenin/5.jpg",
+            "6": "/projects/oasisbenin/6.jpg",
+            "7": "/projects/oasisbenin/7.jpg",
+            "8": "/projects/oasisbenin/8.jpg",
+            "9": "/projects/oasisbenin/9.jpg"
+        }
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "Estelle": {
+        "fullname": "Estelle",
+        "rule": "Brand strategist / Managing director",
+        "picture": "/team/Estelle.jpg",
+        "facebook": "",
+        "instagram": "",
+        "linkedin": "",
+        "twitter": ""
+    },
+    "Ilénia": {
+        "fullname": "Ilénia",
+        "rule": "Account manager",
+        "picture": "/team/Ilénia.jpg",
+        "facebook": "",
+        "instagram": "",
+        "linkedin": "",
+        "twitter": ""
+    },
+    "Cyrus": {
+        "fullname": "Cyrus",
+        "rule": "Senior Graphic Designer",
+        "picture": "/team/Cyrus.jpg",
+        "facebook": "",
+        "instagram": "",
+        "linkedin": "",
+        "twitter": ""
+    },
+    "Fadil": {
+        "fullname": "Fadil",
+        "rule": "Social media manager",
+        "picture": "/team/Fadil.jpg",
+        "facebook": "",
+        "instagram": "",
+        "linkedin": "",
+        "twitter": ""
+    },
+    "Micrette": {
+        "fullname": "Micrette",
+        "rule": "Graphic designer",
+        "picture": "/team/Micrette.jpg",
+        "facebook": "",
+        "instagram": "",
+        "linkedin": "",
+        "twitter": ""
+    },
+    "Carlos": {
+        "fullname": "Carlos",
+        "rule": "Directeur Photographie",
+        "picture": "/team/Carlos.jpg",
+        "facebook": "",
+        "instagram": "",
+        "linkedin": "",
+        "twitter": ""
+    },
+    "John": {
+        "fullname": "John",
+        "rule": "Photographe/ directeur artistique",
+        "picture": "/team/John.jpg",
+        "facebook": "",
+        "instagram": "",
+        "linkedin": "",
+        "twitter": ""
+    },
+    "Marius": {
+        "fullname": "Marius",
+        "rule": "Head of video production",
+        "picture": "/team/Marius.jpg",
+        "facebook": "",
+        "instagram": "",
+        "linkedin": "",
+        "twitter": ""
+    },
+    "Nabilath": {
+        "fullname": "Nabilath",
+        "rule": "Copywriter",
+        "picture": "/team/Nabilath.jpg",
+        "facebook": "",
+        "instagram": "",
+        "linkedin": "",
+        "twitter": ""
+    }
+}

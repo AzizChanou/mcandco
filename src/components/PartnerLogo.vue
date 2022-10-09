@@ -1,7 +1,13 @@
-<script setup></script>
+<script setup>
+
+defineProps({
+  project: {}
+})
+
+</script>
 
 <template>
-  <a href="" class="p-4 rounded flex justify-center h-[7rem]">
-    <img v-lazy="'src/assets/img/logo/aced.png'" alt="" />
+  <a :href="project.link" class="p-4 rounded flex justify-center h-[4.5rem] lg:h-[6rem]">
+    <img v-lazy="project.logo" :aria-busy="project.name"/>
   </a>
 </template>

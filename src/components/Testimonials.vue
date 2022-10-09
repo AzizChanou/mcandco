@@ -11,7 +11,7 @@ import "swiper/css";
 <template>
   <div id="projects">
     <section>
-      <div class="max-w-screen-2xl px-4 x py-8 mx-auto">
+      <div class="max-w-screen-xl px-4 x py-8 mx-auto">
         <div class="max-w-4xl mx-auto text-center">
           <h2 class="text-3xl font-bold sm:text-4xl">Nos projets</h2>
           <p class="mt-4 text-justify">

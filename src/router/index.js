@@ -12,40 +12,50 @@ import Error404 from "../views/Error404.vue"
 const routes = [
     {
         path: '/',
+        name: 'Home',
         component: Home,
-        name: 'Home'
     },
     {
-        path: '/contact',
+        path: '/contact#contact',
+        name: 'Contact',
         component: Contact,
-        name: 'Contact'
     },
     {
         path: '/projects',
+        name: 'Projects',
         component: Projects,
-        name: 'Projects'
     },
     {
-        path: '/project/*',
+        path: '/project/:name',
+        name: 'Project',
         component: Project,
-        name: 'Project'
+        props: true
     },
     {
         path: '/team',
+        name: 'Team',
         component: Team,
-        name: 'Team'
     },
     {
         path: '/:catchAll(.*)',
+        name: 'Error404',
         component: Error404,
-        name: 'NotFound'
     },
 ]
-
 
 const router = createRouter({
     history: createWebHashHistory(),
     routes,
+})
+
+router.beforeEach((to, from, next) => {
+    
+    let documentTitle = `${import.meta.env.VITE_APP_TITLE} - ${to.name}`
+    if (to.params.title) {
+        documentTitle = `${import.meta.env.VITE_APP_TITLE} - ${to.params.title}`
+    }
+    document.title = documentTitle
+    next()
 })
 
 export default router

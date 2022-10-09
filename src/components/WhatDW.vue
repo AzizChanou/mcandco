@@ -7,7 +7,7 @@ import "swiper/css";
 </script>
 
 <template>
-  <div id="part" class="max-w-screen-2xl mx-auto">
+  <div id="part" class="max-w-screen-xl mx-auto">
     <swiper
       dir="rtl"
       :modules="[Navigation, Pagination]"
@@ -63,19 +63,4 @@ import "swiper/css";
 </template>
 
 <style>
-#img {
-  min-height: 50vh;
-}
-
-@media (min-width: 640px) {
-  #img {
-    min-height: 100vh;
-  }
-}
-
-@media (min-width: 1536px) {
-  #img {
-    min-height: 50vh;
-  }
-}
 </style>

@@ -1,5 +1,6 @@
 <script setup>
 import ProfilMember from "../components/ProfilMember.vue";
+import members from "../../db/members.json"
 </script>
 
 <template>
@@ -17,10 +18,7 @@ import ProfilMember from "../components/ProfilMember.vue";
       </p>
     </div>
     <div class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10 mt-8">
-      <ProfilMember />
-      <ProfilMember />
-      <ProfilMember />
-      <ProfilMember />
+      <ProfilMember v-for="member in members" :key="member.fullname" :member="member" />
     </div>
   </div>
 </template>

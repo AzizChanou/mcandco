@@ -1,3 +1,61 @@
-<script setup></script>
+<script setup>
+import { useRoute } from 'vue-router';
+import projects from "../../db/projects.json"
 
-<template></template>
+const route = useRoute();
+var project = {};
+
+
+for (const newProject in projects) {
+    if (route.params.name == projects[newProject].name) {
+        project = projects[newProject];
+    }
+}
+
+
+function readTextFile(file) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function () {
+        if (rawFile.readyState === 4) {
+            if (rawFile.status === 200 || rawFile.status == 0) {
+                var allText = rawFile.responseText;
+                project.description = allText;
+            }
+        }
+    }
+    rawFile.send(null);
+}
+
+readTextFile('../../db/pro.txt');
+
+</script>
+
+<template>
+    <section id="project">
+        <div class="max-w-screen-xl px-4 x py-8 mx-auto space-y-10">
+            <div>
+                <img v-lazy="project.picture[1]" :alt="project.name"
+                    class="w-full h-[500px] object-cover object-center" />
+            </div>
+            <div class="space-y-12">
+                <h2 class="text-5xl font-semibold">{{project.name}}</h2>
+
+                <p class="text-justify text-xl">
+                    {{project.description}}
+                </p>
+
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <img v-for="picture in project.picture" v-lazy="picture" alt=""
+                        class="shadow-sm hover:scale-105 duration-500">
+                </div>
+
+            </div>
+            <div>
+                <video controls src=""
+                    poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217" class="w-full">
+                </video>
+            </div>
+        </div>
+    </section>
+</template>

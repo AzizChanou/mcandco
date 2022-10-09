@@ -1,7 +1,7 @@
 <template>
   <div
     id="contact"
-    class="max-w-screen-2xl px-4 py-16 mx-auto sm:px-6 lg:px-8 flex flex-col lg:flex-row"
+    class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 flex flex-col lg:flex-row"
   >
     <div class="lg:w-1/2 space-y-6">
       <h1 class="text-2xl font-bold sm:text-3xl">Contactez-nous !</h1>
