@@ -1,5 +1,5 @@
 <script setup>
-const whiteLogo = "src/assets/img/logo/white_logo.svg";
+const whiteLogo = "/assets/logo/white_logo.svg";
 </script>
 
 <template>
