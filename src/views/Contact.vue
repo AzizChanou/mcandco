@@ -4,7 +4,7 @@
     class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 flex flex-col lg:flex-row"
   >
     <div class="lg:w-1/2 space-y-6">
-      <h1 class="text-2xl font-bold sm:text-3xl">Contactez-nous !</h1>
+      <h1 class="text-4xl font-bold tracking-tight sm:text-5xl">Contactez-nous !</h1>
       <p class="text-xl font-semibold sm:text-2xl">
         Vous avez une idée, un projet, nous <br />
         pouvons vous aider à les concrétiser <br />

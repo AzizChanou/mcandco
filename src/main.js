@@ -1,23 +1,12 @@
 import VueLazyload from 'vue-lazyload'
 import { createApp } from 'vue'
-import { createI18n } from "vue-i18n";
+import { i18n } from "./i18n";
 import App from './App.vue'
 import router from './router'
-import messages from "@intlify/unplugin-vue-i18n/messages";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import './style.css'
-
-const i18n = createI18n({
-    legacy: false,
-    globalInjection: true,
-    locale: import.meta.env.VITE_APP_I18N_LOCALE,
-    fallbackLocale: import.meta.env.VITE_APP_I18N_FALLBACK_LOCALE,
-    availableLocales: [import.meta.env.VITE_APP_I18N_LOCALE, import.meta.env.VITE_APP_I18N_FALLBACK_LOCALE],
-    messages: messages,
-});
-
 
 library.add(fab)
 /* const loadimage = import('./assets/img/logo/black_logo.svg') */

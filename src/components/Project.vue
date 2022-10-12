@@ -18,7 +18,7 @@ const truncate = function (string, limit) {
       <div class="p-6 space-y-3 bg-white">
         <h3 class="text-xl text-gray-800">{{project.name}}</h3>
         <p class="text-lg text-gray-400">
-          {{truncate(project.description, 50)}}
+          {{truncate(project.description.p1, 50)}}
         </p>
       </div>
     </router-link>

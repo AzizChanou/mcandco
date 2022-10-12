@@ -10,7 +10,7 @@ import members from "../../db/members.json"
         Notre équipe
       </h2>
 
-      <p class="max-w-4xl mx-auto mt-4 text-gring-offset-warm-gray-500">
+      <p class="max-w-4xl mx-auto mt-4 text-justify">
         Nous sommes une équipe de consultants spécialisés, stratégiques et
         passionnés. Nous utilisons notre vaste expérience, au service de votre
         marque. Nous créons des solutions pertinentes, afin de mieux vous

@@ -7,3 +7,11 @@
     font-family: "DINpro";
     src: url("/fonts/DINPro-Regular.otf");
 }
+@font-face {
+    font-family: "DINproblack";
+    src: url("/fonts/DINPro-Black.otf");
+}
+@font-face {
+    font-family: "DINprobold";
+    src: url("/fonts/DINPro-Bold.otf");
+}

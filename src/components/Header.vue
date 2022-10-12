@@ -34,26 +34,28 @@ const toggleDarkMode = () => {
 
               <ul class="flex items-center font-medium gap-6 text-sm">
                 <li>
-                  <router-link :to="{ name: 'Home' }" class=" text-lg transition hover:text-gray-700">
-                    Accueil
+                  <router-link :to="{ name: 'Home', hash:'#cta'  }" class=" text-lg transition hover:text-gray-700">
+                    {{$t("header.home")}}
                   </router-link>
                 </li>
 
                 <li>
-                  <router-link :to="{ name: 'Team' }" class="text-lg transition hover:text-gray-700">
-                    La Team
+                  <router-link :to="{ name: 'Team', hash:'#team'  }" class="text-lg transition hover:text-gray-700">
+                    {{$t("header.team")}}
                   </router-link>
                 </li>
 
                 <li>
-                  <router-link :to="{ name: 'Projects' }" class="text-lg transition hover:text-gray-700">
-                    Nos Projets
+                  <router-link :to="{ name: 'Projects', hash:'#projects'  }"
+                    class="text-lg transition hover:text-gray-700">
+                    {{$t("header.project")}}
                   </router-link>
                 </li>
 
                 <li>
-                  <router-link :to="{ name: 'Contact' }" class="text-lg transition hover:text-gray-700">
-                    Contacts
+                  <router-link :to="{ name: 'Contact', hash:'#contact' }"
+                    class="text-lg transition hover:text-gray-700">
+                    {{$t("header.contact")}}
                   </router-link>
                 </li>
               </ul>
@@ -78,6 +80,9 @@ const toggleDarkMode = () => {
                     class="hover:scale-105 hover:text-blue-300 text-xl duration-500" />
                 </a>
               </div>
+
+              <LocalSelect />
+
               <button id="themeToggle" type="button" @click="toggleDarkMode()"
                 class="text-primary dark:text-white hover:animate-spin rounded-lg text-sm p-2 duration-1000">
                 <svg id="toggle-dark-icon" class="w-8 h-8 hidden" fill="currentColor" viewBox="0 0 20 20"
@@ -92,8 +97,6 @@ const toggleDarkMode = () => {
                 </svg>
               </button>
 
-              <LocalSelect />
-
               <button id="navMenu" class="sticky block z-20 md:hidden">
                 <span></span>
                 <span></span>
@@ -105,17 +108,17 @@ const toggleDarkMode = () => {
       </header>
       <div class="p-12 sm:p-16 lg:p-24">
         <div class="max-w-xl mx-auto text-center">
-          <p class="text-4xl font-bold sm:text-7xl">{{$t("hi")}}</p>
+          <p class="text-4xl font-dinprobold sm:text-7xl">{{$t("header.title")}}</p>
 
           <p class="mt-6 text-xl font-medium text-justify">
-            {{$t("team")}}
+            {{$t("header.welcome")}}
           </p>
 
           <div class="mt-8 sm:items-center sm:justify-center sm:flex">
-            <a href="/contact#contact"
+            <router-link :to="{name: 'Contact', hash:'#contact'}"
               class="block px-5 py-3 font-medium text-white bg-transparent border-2 border-white rounded-lg shadow-sm hover:bg-white hover:text-black duration-500">
-              NOUS JOINDRE
-            </a>
+              {{$t("header.joinus")}}
+            </router-link>
           </div>
 
           <div class="animate-bounce mt-36 text-sm">

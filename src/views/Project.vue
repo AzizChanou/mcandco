@@ -12,23 +12,6 @@ for (const newProject in projects) {
     }
 }
 
-
-function readTextFile(file) {
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function () {
-        if (rawFile.readyState === 4) {
-            if (rawFile.status === 200 || rawFile.status == 0) {
-                var allText = rawFile.responseText;
-                project.description = allText;
-            }
-        }
-    }
-    rawFile.send(null);
-}
-
-readTextFile('../../db/pro.txt');
-
 </script>
 
 <template>
@@ -41,8 +24,8 @@ readTextFile('../../db/pro.txt');
             <div class="space-y-12">
                 <h2 class="text-5xl font-semibold">{{project.name}}</h2>
 
-                <p class="text-justify text-xl">
-                    {{project.description}}
+                <p v-for="paragraph in project.description" class="text-justify text-xl">
+                    {{paragraph}}
                 </p>
 
                 <div class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">

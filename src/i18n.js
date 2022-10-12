@@ -4,14 +4,17 @@ import messages from "@intlify/unplugin-vue-i18n/messages";
 // List of all locales.
 export const allLocales = [import.meta.env.VITE_APP_I18N_LOCALE, import.meta.env.VITE_APP_I18N_FALLBACK_LOCALE];
 
+
 // Create Vue I18n instance.
 export const i18n = createI18n({
     legacy: false,
     globalInjection: true,
     locale: import.meta.env.VITE_APP_I18N_LOCALE,
     fallbackLocale: import.meta.env.VITE_APP_I18N_FALLBACK_LOCALE,
+    availableLocales: [import.meta.env.VITE_APP_I18N_LOCALE, import.meta.env.VITE_APP_I18N_FALLBACK_LOCALE],
     messages: messages,
 });
+
 
 // Set new locale.
 export async function setLocale(locale) {
@@ -28,8 +31,10 @@ export async function setLocale(locale) {
         i18n.global.setLocaleMessage(locale, messages);
     }
 
+    localStorage.setItem('lang', locale);
+    i18n.global.locale.value = localStorage.getItem('lang');
+    document.getElementById('first').setAttribute('lang', localStorage.getItem('lang'));
     // Set locale.
-    i18n.global.locale.value = locale;
 }
 
 // Fetch locale.

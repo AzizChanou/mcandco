@@ -1,6 +1,6 @@
 import {
     createRouter,
-    createWebHashHistory
+    createWebHistory
 } from "vue-router";
 import Home from "../views/Home.vue"
 import Contact from "../views/Contact.vue"
@@ -16,7 +16,7 @@ const routes = [
         component: Home,
     },
     {
-        path: '/contact#contact',
+        path: '/contact',
         name: 'Contact',
         component: Contact,
     },
@@ -44,15 +44,25 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createWebHashHistory(),
+    history: createWebHistory(import.meta.env.BASE_URL),
     routes,
+    scrollBehavior(to) {
+        if (to.hash) {
+            return {
+                el: to.hash,
+                behavior: 'smooth',
+            }
+        } else {
+            return { top: 0, left: 0, behavior: 'smooth' }
+        }
+    }
 })
 
 router.beforeEach((to, from, next) => {
-    
-    let documentTitle = `${import.meta.env.VITE_APP_TITLE} - ${to.name}`
+
+    let documentTitle = `${to.name} - ${import.meta.env.VITE_APP_TITLE}`
     if (to.params.title) {
-        documentTitle = `${import.meta.env.VITE_APP_TITLE} - ${to.params.title}`
+        documentTitle = `${to.params.title} - ${import.meta.env.VITE_APP_TITLE}`
     }
     document.title = documentTitle
     next()

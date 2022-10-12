@@ -9,6 +9,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'dinpro': ['DINpro', 'sans'],
+        'dinproblack': ['DINproblack', 'sans'],
+        'dinprobold': ['DINprobold', 'sans'],
       },
     },
   },
