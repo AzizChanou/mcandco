@@ -1,8 +1,8 @@
 <script setup>
 import LocalSelect from '@/components/LocalSelect.vue'
 
-const whiteLogo = "src/assets/img/logo/white_logo.svg";
-const yellowPattern = "src/assets/img/logo/yellow_pattern.svg";
+const whiteLogo = "/assets/logo/white_logo.svg";
+const yellowPattern = "/assets/logo/yellow_pattern.svg";
 
 
 const toggleDarkMode = () => {
