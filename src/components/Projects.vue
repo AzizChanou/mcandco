@@ -1,5 +1,5 @@
 <script setup>
-import Project from "../components/Project.vue";
+import Project from "@/components/Project.vue";
 import projects from "../../db/projects.json"
 
 </script>
@@ -20,11 +20,14 @@ import projects from "../../db/projects.json"
           </p>
         </div>
         <div class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 mt-8">
-          <Project v-for="project in projects" :key="project.name" :project="project" />
+          <Project :project="projects.atelico" />
+          <Project :project="projects.lalabeauties" />
+          <Project class="hidden md:flex" :project="projects.clubdesminions" />
+          <Project class="hidden xl:flex" :project="projects.joli" />
         </div>
       </div>
       <div class="mt-8 items-center justify-center flex">
-        <router-link :to="{ name: 'Projects' }"
+        <router-link :to="{ name: 'Projects', hash: '#projects' }"
           class="block px-5 py-3 font-medium text-black bg-transparent border-2 border-black rounded-lg shadow-sm hover:bg-black hover:text-white duration-500">
           Voir plus
         </router-link>

@@ -1,5 +1,5 @@
 <script setup>
-import ProfilMember from "../components/ProfilMember.vue";
+import ProfilMember from "@/components/ProfilMember.vue";
 import members from "../../db/members.json"
 </script>
 

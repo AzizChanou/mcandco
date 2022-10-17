@@ -1,5 +1,5 @@
 <script setup>
-import Project from "../components/Project.vue";
+import Project from "@/components/Project.vue";
 import projects from "../../db/projects.json"
 </script>
 

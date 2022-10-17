@@ -5,9 +5,8 @@ import projects from "../../db/projects.json"
 const route = useRoute();
 var project = {};
 
-
 for (const newProject in projects) {
-    if (route.params.name == projects[newProject].name) {
+    if (route.params.title === projects[newProject].name) {
         project = projects[newProject];
     }
 }
@@ -29,7 +28,7 @@ for (const newProject in projects) {
                 </p>
 
                 <div class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
-                    <img v-for="picture in project.picture" v-lazy="picture" alt=""
+                    <img v-for="picture in project.picture" v-lazy="picture" :alt="project.name"
                         class="shadow-sm hover:scale-105 duration-500">
                 </div>
 

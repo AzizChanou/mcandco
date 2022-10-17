@@ -18,7 +18,7 @@
         </div>
 
         <div class="my-8">
-          <img v-lazy="'src/assets/img/tools.png'" alt="" class="mx-auto" />
+          <img v-lazy="'/assets/tools.png'" alt="" class="mx-auto" />
         </div>
       </div>
     </section>

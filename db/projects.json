@@ -1,6 +1,6 @@
 {
     "atelico": {
-        "logo": "assets/logo/atelico.png",
+        "logo": "/assets/logo/atelico.svg",
         "name": "Atelico",
         "link": "",
         "description": {
@@ -21,7 +21,7 @@
         }
     },
     "lalabeauties": {
-        "logo": "assets/logo/lala.png",
+        "logo": "/assets/logo/lalabeauties.svg",
         "name": "Lala-Beauties",
         "link": "",
         "description": {
@@ -50,7 +50,7 @@
         }
     },
     "clubdesminions": {
-        "logo": "assets/logo/minion.png",
+        "logo": "/assets/logo/minion.svg",
         "name": "Club-des-minions",
         "link": "",
         "description": {
@@ -71,7 +71,7 @@
         }
     },
     "rbl": {
-        "logo": "assets/logo/rbl.png",
+        "logo": "/assets/logo/rbl.svg",
         "name": "Revenge-Body-by-L",
         "link": "",
         "description": {
@@ -91,7 +91,7 @@
         }
     },
     "joli": {
-        "logo": "assets/logo/joli.png",
+        "logo": "/assets/logo/joli.svg",
         "name": "JoLi",
         "link": "",
         "description": {
@@ -112,7 +112,7 @@
         }
     },
     "lalamedispa": {
-        "logo": "assets/logo/lala.png",
+        "logo": "/assets/logo/lalamedispa.svg",
         "name": "Lala-Medi-Spa",
         "link": "",
         "description": {
@@ -133,7 +133,7 @@
         }
     },
     "cedetro": {
-        "logo": "assets/logo/cedetro.png",
+        "logo": "/assets/logo/cedetro.svg",
         "name": "Ced&Ro",
         "link": "",
         "description": {
@@ -154,7 +154,7 @@
         }
     },
     "yogawithmae": {
-        "logo": "assets/logo/yogawithmae.png",
+        "logo": "/assets/logo/yogawithmae.svg",
         "name": "Yoga-With-Mae",
         "link": "",
         "description": {
@@ -173,7 +173,7 @@
         }
     },
     "funke": {
-        "logo": "assets/logo/funke.png",
+        "logo": "/assets/logo/funke.svg",
         "name": "Funkè",
         "link": "",
         "description": {
@@ -187,7 +187,7 @@
         }
     },
     "oasisbenin": {
-        "logo": "assets/logo/oasisbenin.png",
+        "logo": "/assets/logo/oasisbenin.svg",
         "name": "Oasis-Bénin",
         "link": "",
         "description": {

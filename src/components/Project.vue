@@ -11,9 +11,9 @@ const truncate = function (string, limit) {
 
 <template>
   <div class="hover:scale-95 duration-500 shadow">
-    <router-link :to="{name: 'Project', params: {name: project.name}}">
+    <router-link :to="{name: 'Project', params: {title: project.name}}">
       <div>
-        <img v-lazy="project.picture[1]" :alt="project.name" />
+        <img v-lazy="project.picture[1]" :alt="project.name" data-loading="../load.gif" />
       </div>
       <div class="p-6 space-y-3 bg-white">
         <h3 class="text-xl text-gray-800">{{project.name}}</h3>

@@ -19,7 +19,7 @@ const toggleDarkMode = () => {
 </script>
 
 <template>
-  <div id="head" class="body bg-cover bg-center" :style="'background-image: url(\'' + yellowPattern + '\');'">
+  <div id="head" class="body w-screen h-[700px] bg-center" :style="'background-image: url(\'' + yellowPattern + '\');'">
     <div class="first">
       <header class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-28">
@@ -34,27 +34,31 @@ const toggleDarkMode = () => {
 
               <ul class="flex items-center font-medium gap-6 text-sm">
                 <li>
-                  <router-link :to="{ name: 'Home', hash:'#cta'  }" class=" text-lg transition hover:text-gray-700">
+                  <router-link :to="{ name: 'Home', hash:'#cta'  }" :active-class="'bg-white p-2 text-black rounded'"
+                    class="text-lg transition hover:bg-white hover:text-black p-2 rounded duration-300">
                     {{$t("header.home")}}
                   </router-link>
                 </li>
 
                 <li>
-                  <router-link :to="{ name: 'Team', hash:'#team'  }" class="text-lg transition hover:text-gray-700">
+                  <router-link :to="{ name: 'Team', hash:'#team'  }" :active-class="'bg-white p-2 text-black rounded'"
+                    class="text-lg transition hover:bg-white hover:text-black p-2 rounded duration-300">
                     {{$t("header.team")}}
                   </router-link>
                 </li>
 
                 <li>
                   <router-link :to="{ name: 'Projects', hash:'#projects'  }"
-                    class="text-lg transition hover:text-gray-700">
+                    :active-class="'bg-white p-2 text-black rounded'"
+                    class="text-lg transition hover:bg-white hover:text-black p-2 rounded duration-300">
                     {{$t("header.project")}}
                   </router-link>
                 </li>
 
                 <li>
                   <router-link :to="{ name: 'Contact', hash:'#contact' }"
-                    class="text-lg transition hover:text-gray-700">
+                    :active-class="'bg-white p-2 text-black rounded'"
+                    class="text-lg transition hover:bg-white hover:text-black p-2 rounded duration-300">
                     {{$t("header.contact")}}
                   </router-link>
                 </li>
@@ -84,7 +88,7 @@ const toggleDarkMode = () => {
               <LocalSelect />
 
               <button id="themeToggle" type="button" @click="toggleDarkMode()"
-                class="text-primary dark:text-white hover:animate-spin rounded-lg text-sm p-2 duration-1000">
+                class="hidden text-primary dark:text-white hover:animate-spin rounded-lg text-sm p-2 duration-1000">
                 <svg id="toggle-dark-icon" class="w-8 h-8 hidden" fill="currentColor" viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
@@ -106,7 +110,7 @@ const toggleDarkMode = () => {
           </div>
         </div>
       </header>
-      <div class="p-12 sm:p-16 lg:p-24">
+      <div class="p-12">
         <div class="max-w-xl mx-auto text-center">
           <p class="text-4xl font-dinprobold sm:text-7xl">{{$t("header.title")}}</p>
 
@@ -122,9 +126,12 @@ const toggleDarkMode = () => {
           </div>
 
           <div class="animate-bounce mt-36 text-sm">
-            <a href="#">
-
-            </a>
+            <router-link :to="{name: 'Home', hash: '#start'}" class="flex justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8" viewBox="0 0 512 512" fill="currentColor">
+                <path
+                  d="M256 0C114.6 0 0 114.6 0 256S114.6 512 256 512s256-114.6 256-256S397.4 0 256 0zM127 297c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l71 71L232 120c0-13.3 10.7-24 24-24s24 10.7 24 24l0 214.1 71-71c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 409c-9.4 9.4-24.6 9.4-33.9 0L127 297z" />
+              </svg>
+            </router-link>
           </div>
         </div>
       </div>
@@ -135,6 +142,7 @@ const toggleDarkMode = () => {
       <div class="line"></div>
     </div>
   </div>
+  <div id="start"></div>
 </template>
 
 <style>
@@ -179,18 +187,10 @@ const toggleDarkMode = () => {
 
 .body {
   display: table;
-  width: 100%;
-  height: 100%;
   color: white;
   line-height: 1.6;
   position: relative;
   overflow: hidden;
-}
-
-@media (min-width: 640px) {
-  .body {
-    height: 700px;
-  }
 }
 
 .lines {

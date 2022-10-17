@@ -1,0 +1,50 @@
+{
+    "doko": {
+        "name": "doko",
+        "logo": "/assets/logo/doko.svg"
+    },
+    "joli": {
+        "name": "joli",
+        "logo": "/assets/logo/joli.svg"
+    },
+    "cdm": {
+        "name": "cdm",
+        "logo": "/assets/logo/cdm.svg"
+    },
+    "flansweet": {
+        "name": "flansweet",
+        "logo": "/assets/logo/flansweet.svg"
+    },
+    "funke": {
+        "name": "funke",
+        "logo": "/assets/logo/funke.svg"
+    },
+    "cedetro": {
+        "name": "cedetro",
+        "logo": "/assets/logo/cedetro.svg"
+    },
+    "rbl": {
+        "name": "rbl",
+        "logo": "/assets/logo/rbl.svg"
+    },
+    "lalamedispa": {
+        "name": "lalamedispa",
+        "logo": "/assets/logo/lalamedispa.svg"
+    },
+    "lalabeauties": {
+        "name": "lalabeauties",
+        "logo": "/assets/logo/lalabeauties.svg"
+    },
+    "yana": {
+        "name": "yana",
+        "logo": "/assets/logo/yana.svg"
+    },
+    "silobile": {
+        "name": "silobile",
+        "logo": "/assets/logo/silobile.svg"
+    },
+    "atelico": {
+        "name": "atelico",
+        "logo": "/assets/logo/atelico.svg"
+    }
+}
