@@ -16,7 +16,7 @@ const men = () => {
 </script>
 
 <template>
-  <div id="menu"
+  <div id="menu" 
     class="transition-all ease-in-out duration-500 flex overflow-auto fixed top-0 text-white z-10 left-0 h-full bg-black flex-col justify-between md:hidden w-0">
     <div class="p-8 py-20">
       <ul class="flex flex-col space-y-6 font-medium divide-y-2 divide-y-reverse">
