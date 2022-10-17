@@ -19,7 +19,7 @@ const toggleDarkMode = () => {
 </script>
 
 <template>
-  <div id="head" class="body w-screen h-[700px] bg-center" :style="'background-image: url(\'' + yellowPattern + '\');'">
+  <div id="head" class="body w-screen h-[700px] bg-center">
     <div class="first">
       <header class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-28">
@@ -85,7 +85,7 @@ const toggleDarkMode = () => {
                 </a>
               </div>
 
-              <LocalSelect class="mr-8"/>
+              <LocalSelect class="mr-8" />
 
               <button id="themeToggle" type="button" @click="toggleDarkMode()"
                 class="hidden text-primary dark:text-white hover:animate-spin rounded-lg text-sm p-2 duration-1000">
