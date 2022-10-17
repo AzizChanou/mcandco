@@ -7,6 +7,12 @@ navMenu.addEventListener("click", () => {
   menu.classList.toggle("w-full");
   menu.classList.toggle("w-0");
 });
+
+const men = () => {
+  navMenu.classList.toggle("active");
+  menu.classList.toggle("w-full");
+  menu.classList.toggle("w-0");
+}
 </script>
 
 <template>
@@ -16,32 +22,32 @@ navMenu.addEventListener("click", () => {
       <ul class="flex flex-col space-y-6 font-medium divide-y-2 divide-y-reverse">
         <li></li>
         <li>
-          <router-link :to="{ name: 'Home' }">
+          <router-link :to="{ name: 'Home', hash:'#cta'  }" @click.stop="men()">
             {{$t("header.home")}}
           </router-link>
         </li>
 
         <li>
-          <router-link :to="{ name: 'Team' }">
+          <router-link :to="{ name: 'Team', hash:'#team'  }" @click.stop="men()">
             {{$t("header.team")}}
           </router-link>
         </li>
 
         <li>
-          <router-link :to="{ name: 'Projects' }">
+          <router-link :to="{ name: 'Projects', hash:'#projects'  }" @click.stop="men()">
             {{$t("header.project")}}
           </router-link>
         </li>
 
         <li>
-          <router-link :to="{ name: 'Contact' }">
+          <router-link :to="{ name: 'Contact', hash:'#contact' }" @click.stop="men()">
             {{$t("header.contact")}}
           </router-link>
         </li>
       </ul>
     </div>
     <span class="block justify-center p-10">
-      <router-link :to="{ name: 'Home' }">
+      <router-link :to="{ name: 'Home' }" @click.stop="men()">
         <img v-lazy="whiteLogo" alt="" class="w-2/5 mx-auto" />
       </router-link>
       <div class="flex flex-wrap justify-center gap-6 mt-6">

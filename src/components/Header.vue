@@ -65,7 +65,7 @@ const toggleDarkMode = () => {
               </ul>
             </nav>
 
-            <div class="flex items-center gap-4">
+            <div class="flex relative items-center gap-4">
               <div class="hidden sm:gap-4 sm:flex">
                 <a href="https://web.facebook.com/studiomcandco" target="blank">
                   <font-awesome-icon icon="fa-brands fa-facebook"
@@ -85,7 +85,7 @@ const toggleDarkMode = () => {
                 </a>
               </div>
 
-              <LocalSelect />
+              <LocalSelect class="mr-8"/>
 
               <button id="themeToggle" type="button" @click="toggleDarkMode()"
                 class="hidden text-primary dark:text-white hover:animate-spin rounded-lg text-sm p-2 duration-1000">
@@ -101,7 +101,7 @@ const toggleDarkMode = () => {
                 </svg>
               </button>
 
-              <button id="navMenu" class="sticky block z-20 md:hidden">
+              <button id="navMenu" class="absolute right-0 block z-20 md:hidden">
                 <span></span>
                 <span></span>
                 <span></span>
